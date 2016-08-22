@@ -1,2 +1,2 @@
-# How can I do X?
+# R Sample
 
