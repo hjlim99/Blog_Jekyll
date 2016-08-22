@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [1. 분석환경구축](DA_system_setup.md)
+* [데이터 분석 환경 구축하기 (서버, PC)](DA_system_setup.md)
 * [2. 관련 툴](chapter2.md)
    * [2.1 Markdown](chapter2/chapter2_1.md)
    * [2.2 R Studio Tip](chapter2/chapter2_2.md)
