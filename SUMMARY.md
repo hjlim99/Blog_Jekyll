@@ -6,5 +6,5 @@
    * [2.1 Markdown](chapter2/chapter2_1.md)
    * [2.2 R Studio Tip](chapter2/chapter2_2.md)
 * [3. R Sample](chapter3.md)
-* Computer Vision Intro
+* [Computer Vision Intro](computer_vision_intro.md)
 
