@@ -8,5 +8,5 @@
 * [3. R Sample](chapter3.md)
 * [Computer Vision Intro](computer_vision_intro.md)
 * [데이터 분석 관련 툴 (IDE, 시각화)](Tools_DA_IDE_VIS.md)
-* [Tools] R Studio Tips
+* [[Tools] R Studio Tips]([tools]_r_studio_tips.md)
 
