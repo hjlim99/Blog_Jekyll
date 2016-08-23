@@ -51,6 +51,7 @@ raw<- read.table(paste0(path, "/ko_kyonggi_25_2016-04-25~2016-05-03_All_14623359
 raw <- read.table("./ko_kyonggi_25_2016-04-25~2016-05-03_All_1462335982.csv", header=T, sep=",")  # sep이용 csv 읽기 가능 
 #raw <- read.table(file.choose(), header=T, sep=",")  # sep이용 csv 읽기 가능 
 str(raw)
+
 #컬럼 이름 입력 
 colnames(raw) <-c("timestamp",  "siteID" ,  "outdoor_condition" ,  "outdoor_temp" ,  "outdoor_humidity"  ,  "indoor_temp"  ,  "indoor_humidity"  ,  "occupancy" ,  "power_realtime"  ,  "power_accumulated"  ,  "plug1_serial"  ,  "plug1_description",  "plug1_isRunning" ,  "plug1_power_realtime" ,  "plug2_serial"  ,  "plug2_description",  "plug2_isRunning" ,  "plug2_power_realtime" ,  "plug3_serial"  ,  "plug3_description",  "plug3_isRunning" ,  "plug3_power_realtime" ,  "plug4_serial"  ,  "plug4_description",  "plug4_isRunning" ,  "plug4_power_realtime" ,  "plug5_serial"  ,  "plug5_description",  "plug5_isRunning" ,  "plug5_power_realtime" ,  "plug6_serial"  ,  "plug6_description",  "plug6_isRunning" ,  "plug6_power_realtime" ,  "plug7_serial"  ,  "plug7_description",  "plug7_isRunning" ,  "plug7_power_realtime" ,  "plug8_serial"  ,  "plug8_description",  "plug8_isRunning" ,  "plug8_power_realtime" ,  "plug9_serial"  ,  "plug9_description",  "plug9_isRunning" ,  "plug9_power_realtime" ,  "plug10_serial"  ,  "plug10_description",  "plug10_isRunning" ,  "plug10_power_realtime")
 t(raw)#switch row & columns  
