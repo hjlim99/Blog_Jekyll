@@ -7,4 +7,5 @@
 * [데이터 분석 관련 툴 (IDE, 시각화)](Tools_DA_IDE_VIS.md)
 * [[Tools] R Studio Tips]([tools]_r_studio_tips.md)
 * [markdown](markdown.md)
+* Ubuntu에 Read the docs 설치하기
 
