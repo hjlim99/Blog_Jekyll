@@ -8,5 +8,5 @@
 * [[Tools] R Studio Tips]([tools]_r_studio_tips.md)
 * [markdown](markdown.md)
 * [Ubuntu에 Read the docs 설치하기](install_RTD_ubuntu.md)
-* Ubuntu에 Jekyll 설치하기
+* [Ubuntu에 Jekyll 설치하기](install_Jekyll_ubuntu.md)
 
