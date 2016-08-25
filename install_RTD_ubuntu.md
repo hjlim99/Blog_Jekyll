@@ -1,7 +1,7 @@
 ## Ubuntu에 Read the docs 설치하기
 
->출처 : [I Believe In My Self 블로그](http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/)
->Read the docs 사용법 : [cimple 블로그](http://cimple.tistory.com/416)
+> 출처 : [I Believe In My Self 블로그](http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/)
+> Read the docs 사용법 : [cimple 블로그](http://cimple.tistory.com/416)
 
 ### 1. root 계정으로 변경
 ```bash
