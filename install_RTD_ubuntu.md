@@ -1,5 +1,7 @@
 ## Linux 서버에 Read the docs 설치하기
 
+>출처 : [I Believe In My Self 블로그](http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/)
+
 ### 1. root 계정으로 변경
 ```bash
 su 
