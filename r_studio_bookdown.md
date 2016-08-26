@@ -1,7 +1,6 @@
-# R Studio와 bookdown.org를 이용한 Rmd 문서화 하기
-
-
 ###
+
+> R Studio 0.99.1251 이상 버젼 필요 (Build-Build Book 기능 포함)
 
 ### 1. 패키지 설치 
 
@@ -11,6 +10,17 @@ R 실행
 install.packages("devtools")
 devtools::install_github("rstudio/bookdown")
 ```
+
+### 2. Rmd 문서 작성
+
+###### 1. 하기 설정 수정하기 
+```
+site: bookdown::bookdown_site #고정값
+output: bookdown::gitbook #고정값
+```
+>Tool-> Project Option -> Build tool -> Project build tools = website (확인, 필수??)
+
+###### 2. index.Rmd 저장 
 
 
 ### 2. github 준비 
@@ -40,29 +50,9 @@ link-citations: yes
 github-repo: rstudio/bookdown-demo
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
-
-# Prerequisites
-
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
-
-For now, you have to install the development versions of **bookdown** from Github:
-
-'''{r eval=FALSE}
-devtools::install_github("rstudio/bookdown")
-'''
-
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
-
-To compile this example to PDF, you need to install XeLaTeX.
-
-''''{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-''''
-
 ```
+
+
 
 ### 4. 책 Build하기 
 * Build 패널 클릭  (Environment, History 패널 옆)
@@ -75,3 +65,6 @@ knitr::write_bib(c(
 ---
 
 [1]: https://bookdown.org/
+[2]: http://bookdown.io/
+[3]: https://www.rstudio.com/resources/webinars/introducing-bookdown/
+[4]: https://github.com/rstudio/bookdown-demo  (sample code)
