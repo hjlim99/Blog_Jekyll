@@ -1,4 +1,3 @@
-###
 
 > R Studio 0.99.1251 이상 버젼 필요 (Build-Build Book 기능 포함)
 
@@ -23,9 +22,6 @@ output: bookdown::gitbook #고정값
 ###### 2. index.Rmd 저장 
 
 
-### 2. github 준비 
-1. 새 Repository생성
-2. https://github.com/rstudio/bookdown-demo 클론
 
 
 
@@ -56,6 +52,8 @@ description: "This is a minimal example of using the bookdown package to write a
 
 ### 4. 책 Build하기 
 * Build 패널 클릭  (Environment, History 패널 옆)
+
+> 해당 챕터만 수정 사항 보고 싶으면 `knitr` 이용하여 확인 
 
 ### 5. bookdoc.org에 출판 
 
