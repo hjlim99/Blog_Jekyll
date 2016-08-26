@@ -57,7 +57,7 @@ description: "This is a minimal example of using the bookdown package to write a
 
 ### 5. bookdoc.org에 출판 
 
-`bookdown::publish_book(render = "local")`
+`bookdown::publish_book()`
 
 
 ---
