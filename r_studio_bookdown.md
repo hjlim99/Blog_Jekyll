@@ -1,10 +1,9 @@
 
 > R Studio 0.99.1251 이상 버젼 필요 (Build-Build Book 기능 포함)
+> 
 > Pandoc을 이용하여 Markdown 랜더링 
 
 ### 1. 패키지 설치 
-
-R 실행 
 
 ```R
 install.packages("devtools")
@@ -13,8 +12,8 @@ devtools::install_github("rstudio/bookdown")
 
 ### 2. Rmd 문서 작성
 
-###### 1. 하기 설정 수정하기 
-```
+###### 1. 설정 수정하기 
+```r
 site: bookdown::bookdown_site #고정값
 output: bookdown::gitbook #고정값
 ```
@@ -35,23 +34,9 @@ output: bookdown::gitbook #고정값
 1. New Project로 "Version Control"-> git생성
 2. 하기 index.Rmd파일 참고 하여 파일 작성/수정
 
-> `#` 제목으로 각 챕터 구분 
+> `#`(single sharp)제목으로 __각 챕터__ 구분 
  
-```R
---- 
-title: "A Minimal Book Example"
-author: "Yihui Xie"
-date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
-output: bookdown::gitbook
-documentclass: book
-bibliography: [book.bib, packages.bib]
-biblio-style: apalike
-link-citations: yes
-github-repo: rstudio/bookdown-demo
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
----
-```
+
 
 
 
@@ -68,9 +53,12 @@ description: "This is a minimal example of using the bookdown package to write a
 ### [QnA]
 ###### 1. Python도 사용 가능한가?
 *Rmarkdown이 기본적으로 다른 언어 지원, 하기 코드 정크로 사용 가능
-```{python}
+
+\```{python}
+
 print("hello world")
-'''
+
+\```
 ###### 2. readthedown Rmd template(rmdformats package)과의 다른점은?
 해당 패키지를 잘 안지 못하여 답변 불가 
 
@@ -80,6 +68,22 @@ https://bookdown.org/yihui/bookdown/yaml-options.html
 ###### 4. IEEE 저널 latex 템플릿과 연동 가능 한가?
 * bookdown을 사용하는 것 보다 [rticles](https://github.com/rstudio/rticles) 패키지의 Template 사용 추천 
 
+##### 5. sample code [4]
+```R
+--- 
+title: "A Minimal Book Example"
+author: "Yihui Xie"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+```
 ---
 
 [1]: https://bookdown.org/
