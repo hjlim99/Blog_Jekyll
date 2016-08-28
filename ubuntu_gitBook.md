@@ -21,7 +21,18 @@ gitbook serve
 
 
 
+### 3. Rmarkdown 연계
 
+R Studio에서 실행 
+```
+devtools::install_github("jbryer/Rgitbook")
+require(Rgitbook)
+installGitbook()
+```
 
-
-
+(옵션) 설치 실패시 Ubuntu 콘솔에서 `root`로 설치 
+```bash
+npm install gitbook -g
+npm install gitbook-pdf -g
+npm install gitbook-plugin
+```
