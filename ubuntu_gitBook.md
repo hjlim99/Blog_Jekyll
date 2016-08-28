@@ -36,3 +36,5 @@ npm install gitbook -g
 npm install gitbook-pdf -g
 npm install gitbook-plugin
 ```
+
+> 참고 : http://jason.bryer.org/Rgitbook/
