@@ -3,15 +3,19 @@
 
 ### 0. Node.JS(npm) 사전 설치
 ```
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 apt-get install -y nodejs
 apt-get install nodejs-legacy
 npm install -g n --stable
 node -v
 > 에러시 : ln -s /usr/bin/nodejs /usr/bin/node
 ```
-
-
+소스로 설치 
+```
+git clone http://github.com/isaacs/npm.git
+cd npm
+make install
+```
 ### 1. 설치하기
 
 
