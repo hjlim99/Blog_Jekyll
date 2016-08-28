@@ -12,6 +12,9 @@ gitbook build
 gitbook serve
 ```
 웹페이지를 통해 문서 확인 `http://localhost:4000`
+
+> NodeJS설치 
+> apt-get install nodejs-legacy
 > 에러시 : ln -s /usr/bin/nodejs /usr/bin/node
 > 
 > 샘플 문서 파일 : $ git clone https://github.com/umanji/umanji-docs.git
