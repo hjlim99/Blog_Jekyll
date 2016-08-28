@@ -20,7 +20,7 @@ gitbook serve
 
 ### 2. 플러그인 적용
 
-
+https://joygram.info/wp/?tag=gitbook
 
 ### 3. Rmarkdown 연계
 
