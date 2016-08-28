@@ -16,6 +16,7 @@ gitbook serve
 > 
 > 샘플 문서 파일 : $ git clone https://github.com/umanji/umanji-docs.git
 
+> 한글 메뉴얼 : [bluekms21](https://bluekms21.gitbooks.io/gitbookhelp_kr/content/)
 
 ### 2. 플러그인 적용
 
