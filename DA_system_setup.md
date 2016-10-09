@@ -1,5 +1,16 @@
 
- ### R / R studio 설치
+## Windows 기반 
+
+### R 분석 환경 
+
+* R Core 설치 : https://cloud.r-project.org/bin/windows/base/
+* R Studio 설치 : https://www.rstudio.com/products/rstudio/download/
+
+### Python 분석 환경
+* Anaconda 설치 : https://www.continuum.io/downloads
+
+## Linux 기반
+### R 분석환경
 
 #### 1. R 설치
 ```bash
