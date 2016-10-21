@@ -1,4 +1,4 @@
-# Ubuntu에 gitBook 설치 및 사용하기
+# gitBook 설치 및 사용하기
 
 
 ### 0. Node.JS(npm) 사전 설치
