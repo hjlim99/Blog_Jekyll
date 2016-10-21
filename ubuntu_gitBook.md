@@ -37,6 +37,8 @@ gitbook serve
 
 https://joygram.info/wp/?tag=gitbook
 
+> 추천 플러그인 :  [mathjax](https://plugins.gitbook.com/plugin/mathjax), [code-highlighter](https://plugins.gitbook.com/plugin/code-highlighter), 
+
 ### 3. Rmarkdown 연계
 
 R Studio에서 실행 
