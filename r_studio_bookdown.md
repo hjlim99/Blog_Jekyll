@@ -9,6 +9,7 @@
 install.packages("devtools")
 devtools::install_github("rstudio/bookdown")
 ```
+> apt-get install libssl-dev
 
 ### 2. Rmd 문서 작성
 
