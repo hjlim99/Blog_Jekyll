@@ -10,7 +10,7 @@ install.packages("devtools")
 devtools::install_github("rstudio/bookdown")
 ```
 > Devtools설치 에러시 : apt-get install libssl-dev
-> xelatex 에러시 : 
+> xelatex 에러시 : apt-get install texlive-xetex
 
 ### 2. Rmd 문서 작성
 
