@@ -88,6 +88,8 @@ description: "This is a minimal example of using the bookdown package to write a
 ```
 ---
 
+> 참고 자료 : [How to Start a Bookdown Book](http://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html)
+
 [1]: https://bookdown.org/
 [2]: http://bookdown.io/
 [3]: https://www.rstudio.com/resources/webinars/introducing-bookdown/
