@@ -18,5 +18,3 @@
 * [7 Steps of Data Exploration & Preparation ](7-steps-of-data-exploration-and-preparation.md)
 * [기호와 의미](수학기호와의미.md)
 
-
-
