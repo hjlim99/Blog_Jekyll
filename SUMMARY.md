@@ -15,4 +15,5 @@
 * [머신러닝 알고리즘 분류](머신러닝-알고리즘-분류.md)
 * [머신러닝 프로세스](머신러닝-프로세스.md)
 * [추천 링크\_사이트 정리](추천-링크사이트-정리.md)
+* [7 Steps of Data Exploration & Preparation ](7-steps-of-data-exploration-and-preparation.md)
 
