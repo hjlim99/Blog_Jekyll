@@ -1,6 +1,6 @@
 > 출처
 > * http://www.analyticsvidhya.com/blog/2015/02/data-exploration-preparation-model
-> * http://www.analyticsvidhya.com/blog/2015/02/7-steps-data-exploration-preparation-building-model-part-2/
+> * http://www.analyticsvidhya.com/blog/2015/02/7-steps-data-exploration-preparation-building-model-part-2/  (추가 필요)
 
 
 # 데이터 탐색 
