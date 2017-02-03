@@ -42,6 +42,21 @@ export PATH="/home/username/anaconda/bin:$PATH"  OR 설치 설정시 pretend하�
 
 > [https://www.continuum.io/downloads](https://www.continuum.io/downloads) 에서 최신 버전 확인 가능
 
+
+기본 패키지 설치 
+```
+sudo apt-get install python3 python3-pip python3-dev python-virtualenv
+```
+
+Virtualenv 설치/업그레이트 
+```
+sudo pip install --upgrade virtualenv
+```
+
+
+
+
+
 #### 2. Python 용 R 설치
 
 ```bash
@@ -67,9 +82,9 @@ conda install -c r r-essentials
 ###### 3.1 Jupyter 설정하기
 
 ```
-jupyter notebook --generate-config
-vi /root/.jupyter/jupyter_notebook_config.py
-nohup jupyter notebook
+$ jupyter notebook --generate-config
+$ vi /root/.jupyter/jupyter_notebook_config.py
+$ nohup jupyter notebook
 ```
 
 [http:\/\/localhost:8888\/](http://localhost:8888/)
@@ -77,5 +92,28 @@ nohup jupyter notebook
 > [Jupyter 공식홈페이지](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
 
 #### 4. Tensorflow 설치
+
+가상환경 구축 
+```
+$ mkdir tensorflow
+$ virtualenv --system-site-packages ~/tensorflow 
+```
+
+가상환경 활성화
+```
+$ source ~/tensorflow/bin/activate
+```
+
+텐서플로우 설치
+```
+
+```
+
+가상환경 종료 
+```
+$ deactive
+```
+
+
 
 
