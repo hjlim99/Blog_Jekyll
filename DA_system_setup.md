@@ -35,10 +35,12 @@ $ sudo gdebi rstudio-server-1.0.136-amd64.deb
 #### 1. Python설치
 
 ```bash
-wget http://repo.continuum.io/archive/Anaconda3-4.0.0-Linux-x86_64.sh
-bash Anaconda3-4.0.0-Linux-x86_64.sh
+wget https://repo.continuum.io/archive/Anaconda3-4.3.0-Linux-x86_64.sh
+bash Anaconda3-4.3.0-Linux-x86_64.sh
 export PATH="/home/username/anaconda/bin:$PATH"  OR 설치 설정시 pretend하기
 ```
+
+https://repo.continuum.io/archive/Anaconda3-4.3.0-Linux-x86_64.sh
 
 > [https:\/\/www.continuum.io\/downloads](https://www.continuum.io/downloads) 에서 최신 버전 확인 가능
 
