@@ -24,11 +24,11 @@
 
 ```bash
 $ sudo apt-get install gdebi-core
-$ wget https://download2.rstudio.org/rstudio-server-0.99.902-amd64.deb
-$ sudo gdebi rstudio-server-0.99.902-amd64.deb
+$ wget https://download2.rstudio.org/rstudio-server-1.0.136-amd64.deb
+$ sudo gdebi rstudio-server-1.0.136-amd64.deb
 ```
 
-접속 확인 `http://localhost:8787/`
+> 접속 확인 `http://localhost:8787/`
 
 ### Python\/Jupyter 설치
 
