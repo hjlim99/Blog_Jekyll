@@ -76,5 +76,6 @@ nohup jupyter notebook
 
 > [Jupyter 공식홈페이지](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
 
+#### 4. Tensorflow 설치
 
 
