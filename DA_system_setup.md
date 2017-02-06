@@ -127,8 +127,9 @@ $ nohup jupyter notebook &
 #### Jupyter Lab설치
 ```
 # you will need jupyter notebook >= v4.2
-pip install jupyterlab
-jupyter serverextension enable --py jupyterlab
+pip3 install jupyterlab
+jupyter serverextension enable --py jupyterlab --sys-prefix
+jupyter lab
 ```
 #### 5. Python IDE(Pycharm)설치 
 
