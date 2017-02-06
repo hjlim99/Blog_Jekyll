@@ -106,7 +106,7 @@ $ source ~/tensorflow/bin/activate
 
 텐서플로우 설치
 ```
-
+pip install tensorflow
 ```
 
 가상환경 종료 
@@ -115,5 +115,5 @@ $ deactive
 ```
 
 
-
+> 공식 TensorFlow 설치 [메뉴얼](https://www.tensorflow.org/versions/master/get_started/os_setup)
 
