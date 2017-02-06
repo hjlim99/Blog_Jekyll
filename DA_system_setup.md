@@ -99,7 +99,6 @@ $ source activate tensorflow
 (tensorflow)$ conda install jupyter
 ```
 
-
 ```
 $ sudo pip3 install jupyter
 $ jupyter notebook --generate-config
