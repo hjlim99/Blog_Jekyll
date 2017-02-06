@@ -71,7 +71,7 @@ conda install -c r r-essentials
 Create a conda environment
 
 ```
-$ conda create -n tensorflow python=3.6
+$ conda create -n tensorflow python=x.x
 ```
 
 가상공간 활성화 & 설치
@@ -95,13 +95,17 @@ $ source activate tensorflow
 
 ###### 3.1 Jupyter 설정하기 \(/w conda, /w tensorflow\)
 
+설치하기
+
 ```
 $ source activate tensorflow
+(tensorflow)$ conda install ipython
 (tensorflow)$ conda install jupyter
 ```
 
+설정하기
+
 ```
-$ sudo pip3 install jupyter
 $ jupyter notebook --generate-config
 $ vi /root/.jupyter/jupyter_notebook_config.py
 $ nohup jupyter notebook &
