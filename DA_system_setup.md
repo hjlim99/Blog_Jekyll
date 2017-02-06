@@ -43,6 +43,8 @@ export PATH="/home/username/anaconda/bin:$PATH"  OR 설치 설정시 pretend하�
 > [https://www.continuum.io/downloads](https://www.continuum.io/downloads) 에서 최신 버전 확인 가능
 
 
+__ [중요] Anaconda를 이용하여 Python을 설치 하면 자체 가상환경을 제공하므로, Pip등을 이용한 설치와 구분됨__
+
 기본 패키지 설치 
 ```
 sudo apt-get install python3 python3-pip python3-dev python-virtualenv
