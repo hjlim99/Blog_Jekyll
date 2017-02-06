@@ -90,7 +90,7 @@ $ nohup jupyter notebook &
 
 > 설정 파일 # /home/(username)/.jupyter/jupyter_notebook_config.py
 > c = get_config()
-> c.NotebookApp.ip = '123.456.789.123' # 공인ip를 적어주었다.
+> c.NotebookApp.ip = '*' 
 > c.NotebookApp.open_browser = False # 원격접속으로 활용할 것이기 때문에 비활성화 시켰다.
 > c.NotebookApp.port = 8017 # 포트를 설정해준다. 기본포트로 8888이 자동 배정된다.
 > c.NotebookApp.password = '....' 
