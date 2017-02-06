@@ -123,6 +123,13 @@ $ nohup jupyter notebook &
 
 > 공식 TensorFlow 설치 [메뉴얼](https://www.tensorflow.org/versions/master/get_started/os_setup)
 
+
+#### Jupyter Lab설치
+```
+# you will need jupyter notebook >= v4.2
+pip install jupyterlab
+jupyter serverextension enable --py jupyterlab
+```
 #### 5. Python IDE(Pycharm)설치 
 
 https://www.jetbrains.com/pycharm/download/#section=linux 에서 Community 버전을 다운로드 받았습니다.
