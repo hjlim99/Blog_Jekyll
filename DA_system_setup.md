@@ -82,10 +82,23 @@ conda install -c r r-essentials
 ###### 3.1 Jupyter 설정하기
 
 ```
+$ sudo pip3 install jupyter
 $ jupyter notebook --generate-config
 $ vi /root/.jupyter/jupyter_notebook_config.py
-$ nohup jupyter notebook
+$ nohup jupyter notebook &
 ```
+
+> 설정 파일 # /home/(username)/.jupyter/jupyter_notebook_config.py
+> c = get_config()
+> c.NotebookApp.ip = '123.456.789.123' # 공인ip를 적어주었다.
+> c.NotebookApp.open_browser = False # 원격접속으로 활용할 것이기 때문에 비활성화 시켰다.
+> c.NotebookApp.port = 8017 # 포트를 설정해준다. 기본포트로 8888이 자동 배정된다.
+> c.NotebookApp.password = '....' 
+> * #python 실행후 from notebook.auth import passwd; passwd()
+> c.NotebookApp.notebook_dir = '/home/winterj/notebook' # 기본 디렉터리를 지정시켜준다.
+> c.NotebookApp.base_url = 'notebook' #외부 접근을 위한 필수 작업
+> 참고 : http://b.winterj.me/220858584491
+
 
 [http:\/\/localhost:8888\/](http://localhost:8888/)
 
