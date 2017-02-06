@@ -106,6 +106,8 @@ $ nohup jupyter notebook &
 
 #### 4. Tensorflow 설치
 
+> 가상환경에서 구축하면 jupyter등과 호환 되나?
+
 가상환경 구축 
 ```
 $ mkdir tensorflow
@@ -133,6 +135,15 @@ $python
 ```
 $ deactive
 ```
+
+Install IPython
+
+To use tensorflow with IPython it may be necessary to install IPython into the tensorflow environment:
+111
+$ source activate tensorflow
+(tensorflow)$ conda install ipython
+111
+Similarly, other Python packages like pandas may need to get installed into the tensorflow environment before they can be used together with tensorflow.
 
 
 > 공식 TensorFlow 설치 [메뉴얼](https://www.tensorflow.org/versions/master/get_started/os_setup)
