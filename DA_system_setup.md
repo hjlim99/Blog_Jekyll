@@ -124,3 +124,31 @@ $ deactive
 
 > 공식 TensorFlow 설치 [메뉴얼](https://www.tensorflow.org/versions/master/get_started/os_setup)
 
+#### 5. Python IDE(Pycharm)설치 
+
+https://www.jetbrains.com/pycharm/download/#section=linux 에서 Community 버전을 다운로드 받았습니다.
+
+압축을 풀은 후, /usr/local/ 아래로 옮긴 후..
+```
+$ tar xvzf pycharm-community-2016.2.3.tar.gz 
+$ sudo mv pycharm-community-2016.2.3 /usr/local/pycharm
+$ rm pycharm-community-2016.2.3.tar.gz
+```
+
+.bashrc에 PATH를 추가해주었습니다.
+```
+export PATH=$PATH:/usr/local/pycharm/bin/
+```
+
+path 추가한 것을 적용하고 
+```
+$ source ~/.bashrc
+```
+
+
+pyCharm을 실행시켜 봅니다.
+```
+$ pycharm.sh 
+```
+
+
