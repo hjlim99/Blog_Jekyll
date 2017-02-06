@@ -32,7 +32,7 @@ $ sudo gdebi rstudio-server-1.0.136-amd64.deb
 
 ### Python\/Jupyter 설치
 
-#### 1. Python설치
+#### 1. Python설치 (/w conda)
 
 ```bash
 wget https://repo.continuum.io/archive/Anaconda3-4.3.0-Linux-x86_64.sh
@@ -45,21 +45,8 @@ export PATH="/home/username/anaconda/bin:$PATH"  OR 설치 설정시 pretend하�
 
 __ [중요] Anaconda를 이용하여 Python을 설치 하면 자체 가상환경을 제공하므로, Pip등을 이용한 설치와 구분됨__
 
-기본 패키지 설치 
-```
-sudo apt-get install python3 python3-pip python3-dev python-virtualenv
-```
 
-Virtualenv 설치/업그레이트 
-```
-sudo pip install --upgrade virtualenv
-```
-
-
-
-
-
-#### 2. Python 용 R 설치
+#### 2. Python 용 R 설치 (/w conda)
 
 ```bash
 conda install -c r r-irkernel
@@ -74,14 +61,44 @@ conda install -c r r-essentials
 >
 > `IRkernel::installspec()`
 
-#### 3. OpenCV 설치
+#### 3. OpenCV 설치 (/w conda)
 
 `conda install -c https://conda.binstar.org/menpo opencv3`
 
 > import cv2 \(!!!IMPORTANT it’s still cv2 not cv3\).   
 > `To check the version print(cv2.__version__)`
 
-###### 3.1 Jupyter 설정하기
+
+#### 4. Tensorflow 설치 (/w conda)
+
+Create a conda environment
+```
+$ conda create -n tensorflow python=3.6
+```
+가상공간 활성화 & 설치 
+```
+$ source activate tensorflow
+(tensorflow)$ conda install -c conda-forge tensorflow # Linux/Mac OS X, Python 2.7/3.4/3.5, CPU only:
+```
+
+> pip을이용하여 설치할 경우 가상공간 진입후 하기
+>> $ source activate tensorflow 
+>> $ (tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp35-cp35m-linux_x86_64.whl
+>> $ (tensorflow)$ pip3 install --ignore-installed --upgrade $TF_BINARY_URL
+
+가상공간 나오기 
+```
+(tensorflow)$ source deactivate
+```
+
+###### 3.1 Jupyter 설정하기 (/w conda, /w tensorflow)
+
+
+```
+$ source activate tensorflow
+(tensorflow)$ conda install jupyter
+```
+
 
 ```
 $ sudo pip3 install jupyter
@@ -104,49 +121,6 @@ $ nohup jupyter notebook &
 
 [http:\/\/localhost:8888\/](http://localhost:8888/)
 
-> [Jupyter 공식홈페이지](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
-
-#### 4. Tensorflow 설치
-
-> 가상환경에서 구축하면 jupyter등과 호환 되나?
-
-가상환경 구축 
-```
-$ mkdir tensorflow
-$ virtualenv --system-site-packages ~/tensorflow 
-```
-
-가상환경 활성화
-```
-$ source ~/tensorflow/bin/activate
-```
-
-텐서플로우 설치
-```
-$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp34-cp34m-linux_x86_64.whl
-$ sudo pip install --upgrade $TF_BINARY_URL
-```
-
-설치 확인
-```
-$python 
->>>> import tensorflow as tf
-```
-
-가상환경 종료 
-```
-$ deactive
-```
-
-Install IPython
-
-To use tensorflow with IPython it may be necessary to install IPython into the tensorflow environment:
-111
-$ source activate tensorflow
-(tensorflow)$ conda install ipython
-111
-Similarly, other Python packages like pandas may need to get installed into the tensorflow environment before they can be used together with tensorflow.
-
 
 > 공식 TensorFlow 설치 [메뉴얼](https://www.tensorflow.org/versions/master/get_started/os_setup)
 
@@ -164,17 +138,23 @@ $ rm pycharm-community-2016.2.3.tar.gz
 .bashrc에 PATH를 추가해주었습니다.
 ```
 export PATH=$PATH:/usr/local/pycharm/bin/
-```
-
-path 추가한 것을 적용하고 
-```
 $ source ~/.bashrc
 ```
-
 
 pyCharm을 실행시켜 봅니다.
 ```
 $ pycharm.sh 
 ```
 
+---
+
+기본 패키지 설치
+```
+sudo apt-get install python3 python3-pip python3-dev python-virtualenv
+```
+
+Virtualenv 설치/업그레이트
+```
+sudo pip install --upgrade virtualenv
+```
 
