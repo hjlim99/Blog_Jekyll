@@ -106,7 +106,14 @@ $ source ~/tensorflow/bin/activate
 
 텐서플로우 설치
 ```
-pip install tensorflow
+$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp34-cp34m-linux_x86_64.whl
+$ sudo pip install --upgrade $TF_BINARY_URL
+```
+
+설치 확인
+```
+$python 
+>>>> import tensorflow as tf
 ```
 
 가상환경 종료 
