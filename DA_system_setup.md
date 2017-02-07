@@ -42,7 +42,6 @@ export PATH="/home/username/anaconda/bin:$PATH"  OR 설치 설정시 pretend하�
 
 > [https://www.continuum.io/downloads](https://www.continuum.io/downloads) 에서 최신 버전 확인 가능
 
-** \[중요\] Anaconda를 이용하여 Python을 설치 하면 자체 가상환경을 제공하므로, Pip등을 이용한 설치와 구분됨**
 
 #### 2. Python 용 R 설치 \(/w conda\)
 
@@ -51,13 +50,14 @@ conda install -c r r-irkernel
 conda install -c r r-essentials
 ```
 
+###### ipython에서 R 패지키 설치 방법 \(R 콘솔에서 실행??\)  
+```
+$ In the R Environmnet  
+> install.packages(c('rzmq','repr','IRkernel','IRdisplay'), repos = 'http://irkernel.github.io/', type = 'source')
+> IRkernel::installspec()
+```
 > “R Essentials” bundle with the IRKernel native R language kernel and over 80 of the most used R language packages for data science, including dplyr, shiny, ggplot2, tidyr,caret and nnet.
->
-> ipython에서 R 패지키 설치 방법 \(R 콘솔에서 실행??\)  
-> $ R  
-> `install.packages(c('rzmq','repr','IRkernel','IRdisplay'), repos = 'http://irkernel.github.io/', type = 'source')`
->
-> `IRkernel::installspec()`
+
 
 #### 3. OpenCV 설치 \(/w conda\)
 
@@ -78,19 +78,15 @@ $ conda create -n tensorflow python=x.x
 
 ```
 $ source activate tensorflow
-(tensorflow)$ conda install -c conda-forge tensorflow # Linux/Mac OS X, Python 2.7/3.4/3.5, CPU only:
+(tensorflow)$ conda install -c conda-forge tensorflow 
+# Linux/Mac OS X, Python 2.7/3.4/3.5, CPU only:
 ```
 
-> pip을이용하여 설치할 경우 가상공간 진입후 하기
->
-> > $ source activate tensorflow   
-> > $ \(tensorflow\)$ export TF\_BINARY\_URL=[https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp35-cp35m-linux\_x86\_64.whl](https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp35-cp35m-linux_x86_64.whl)  
-> > $ \(tensorflow\)$ pip3 install --ignore-installed --upgrade $TF\_BINARY\_URL
-
-가상공간 나오기
-
+####### pip을이용하여 설치할 경우 가상공간 진입후 하기
 ```
-(tensorflow)$ source deactivate
+$ source activate tensorflow  
+$ (tensorflow)$ export TF_BINARY_URL=[https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp35-cp35m-linux_x86_64.whl](https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp35-cp35m-linux_x86_64.whl)  
+$ (tensorflow)$ pip3 install --ignore-installed --upgrade $TF_BINARY_URL
 ```
 
 ###### 3.1 Jupyter 설정하기 \(/w conda, /w tensorflow\)
@@ -111,22 +107,18 @@ $ vi /root/.jupyter/jupyter_notebook_config.py
 $ nohup jupyter notebook &
 ```
 
-> 설정 파일 \# /home/\(username\)/.jupyter/jupyter\_notebook\_config.py  
-> c = get\_config\(\)  
-> c.NotebookApp.ip = '\*'   
-> c.NotebookApp.open\_browser = False \# 원격접속으로 활용할 것이기 때문에 비활성화 시켰다.  
-> c.NotebookApp.port = 8017 \# 포트를 설정해준다. 기본포트로 8888이 자동 배정된다.  
-> c.NotebookApp.password = '....'
->
-> * # python 실행후 from notebook.auth import passwd; passwd\(\)
->
->   c.NotebookApp.notebook\_dir = '/home/winterj/notebook' \# 기본 디렉터리를 지정시켜준다.
->   c.NotebookApp.base\_url = 'notebook' \#외부 접근을 위한 필수 작업
->   참고 : [http://b.winterj.me/220858584491](http://b.winterj.me/220858584491)
+###### 설정 파일 \# /home/\(username\)/.jupyter/jupyter\_notebook\_config.py  
+```
+c = get\_config\(\)  
+c.NotebookApp.ip = '\*'  
+c.NotebookApp.open\_browser = False \# 원격접속으로 활용할 것이기 때문에 비활성화 시켰다.  
+c.NotebookApp.port = 8017 \# 포트를 설정해준다. 기본포트로 8888이 자동 배정된다.  
+c.NotebookApp.password = '....' # python 실행후 from notebook.auth import passwd; passwd\(\)
+c.NotebookApp.notebook\_dir = '/home/winterj/notebook' \# 기본 디렉터리를 지정시켜준다.  
+c.NotebookApp.base\_url = 'notebook' \#외부 접근을 위한 필수 작업  
+```
 
-[http:\/\/localhost:8888\/](http://localhost:8888/)
-
-> 공식 TensorFlow 설치 [메뉴얼](https://www.tensorflow.org/versions/master/get_started/os_setup)
+> 공식 TensorFlow 설치 [[메뉴얼]](https://www.tensorflow.org/versions/master/get_started/os_setup), [[Ref]](http://b.winterj.me/220858584491)
 
 #### Jupyter Lab설치
 
