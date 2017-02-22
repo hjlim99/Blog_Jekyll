@@ -19,8 +19,10 @@ A generator can learn to refine synthetic data (such that it’s closer to the r
 
 The following links will provide relevant code snippets for the concepts being explained. The refiner (generator) refines the synthetic data such that:
 > Refiner(generator)는 synthetic data를 정제 한다.
+
 1. 정제된 데이터와 synthetic데이터간의 차이점을 self-regularization loss term을 통해서 최소화 함으로써 Anotation을 유지 한다.Annotations are preserved by minimizing the difference between the refined and synthetic data with a self-regularization loss term.
 2. synthetic 데이터가 Real 데이터가 된다. (기본 GAN컨셉) The synthetic data looks real (standard concept of GANs).
+
 ```
 def refiner_network(input_image_tensor):
     """
@@ -54,7 +56,6 @@ def refiner_network(input_image_tensor):
     # the output of the last ResNet block is passed to a 1 × 1 convolutional layer producing 1 feature map
     # corresponding to the refined synthetic image
     return layers.Convolution2D(1, 1, 1, border_mode='same', activation='tanh')(x)
-
 ```
 
 The refiner takes as input a synthetic data sample, and outputs a refined sample of the same dimension(s).
