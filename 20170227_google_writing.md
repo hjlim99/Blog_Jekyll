@@ -1,4 +1,4 @@
-# 구글을 이용하여 영작 하기 
+# 구글을 이용하여 영작 하기
 
 영작 꿀팁 : 구글링으로 원어민처럼 영작하기 | #1 자동번역 대결 IBM vs. Google | 김왼손의 Khim Academy
 https://youtu.be/vkwdCmdlP8Y
@@ -25,11 +25,12 @@ https://youtu.be/tFDL6jNSA4I
 
 > 엔다 가즈코는 그의 책에서 영작을 위한 구글 검색 기법을 소개합니다
 
-## 관련 프로그램 
+## 관련 프로그램
 ![](https://d2s7dd7wqof03j.cloudfront.net/icon512.png)
 http://writefullapp.com
 
+## 관련 오프소스 프로그램
+* []딥러닝 기반 문법 교정](http://atpaino.com/dtc.html), [구현하기](https://www.analyticsvidhya.com/blog/2017/02/6-deep-learning-applications-beginner-python/)
 
-
-## [번외] 영작 지원 프로그램 
+## [번외] 영작 지원 프로그램
 http://www.gingersoftware.com
