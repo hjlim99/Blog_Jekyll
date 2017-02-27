@@ -19,4 +19,5 @@
 * [기호와 의미](수학기호와의미.md)
 * [Docker ](docker.md)
 * [20170223\_Keras](20170223_Keras.md)
+* [20170227\_Google\_Writing](20170227_google_writing.md)
 
