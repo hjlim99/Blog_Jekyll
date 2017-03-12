@@ -137,6 +137,12 @@ pip3 install jupyterlab
 jupyter serverextension enable --py jupyterlab --sys-prefix
 jupyter lab
 ```
+#### Jupyter Extension설치
+```
+conda install -c conda-forge jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+```
+[참고](https://github.com/ipython-contrib/jupyter_contrib_nbextensions)
 
 #### OpenAI Gym
 ```
