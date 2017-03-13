@@ -71,6 +71,7 @@ IRkernel::installspec()
 #### 3. OpenCV 설치 \(/w conda\)
 
 `conda install -c https://conda.binstar.org/menpo opencv3`
+`conda install -c menpo opencv3=3.2.0`
 
 > import cv2 \(!!!IMPORTANT it’s still cv2 not cv3\).
 > `To check the version print(cv2.__version__)`
