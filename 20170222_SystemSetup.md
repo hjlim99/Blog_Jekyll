@@ -70,11 +70,12 @@ IRkernel::installspec()
 
 #### 3. OpenCV 설치 \(/w conda\)
 
-`conda install -c https://conda.binstar.org/menpo opencv3`
 `conda install -c menpo opencv3=3.2.0`
 
 > import cv2 \(!!!IMPORTANT it’s still cv2 not cv3\).
 > `To check the version print(cv2.__version__)`
+> `conda install -c https://conda.binstar.org/menpo opencv3`
+
 
 #### 4. Tensorflow 설치 \(/w conda\)
 
@@ -83,6 +84,8 @@ Create a conda environment
 ```
 $ conda create -n tensorflow python=x.x
 ```
+
+> python=x.x 지정유뮤의 차이점은? opencv 설치에 영향 미침
 
 가상공간 활성화 & 설치
 
@@ -151,7 +154,7 @@ sudo apt-get install -y python-numpy python-dev cmake zlib1g-dev libjpeg-dev xvf
 sudo -H pip install gym
 sudo -H pip install gym[atari]
 ```
- ## ROS Installation 
+ ## ROS Installation
 ```
 67  sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
