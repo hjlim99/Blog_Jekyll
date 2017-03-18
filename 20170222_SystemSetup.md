@@ -122,13 +122,13 @@ $ nohup jupyter notebook &
 
 ###### 설정 파일 \# /home/\(username\)/.jupyter/jupyter\_notebook\_config.py
 ```
-c = get\_config\(\)
-c.NotebookApp.ip = '\*'
-c.NotebookApp.open\_browser = False \# 원격접속으로 활용할 것이기 때문에 비활성화 시켰다.
-c.NotebookApp.port = 8017 \# 포트를 설정해준다. 기본포트로 8888이 자동 배정된다.
-c.NotebookApp.password = '....' # python 실행후 from notebook.auth import passwd; passwd\(\)
-c.NotebookApp.notebook\_dir = '/home/winterj/notebook' \# 기본 디렉터리를 지정시켜준다.
-c.NotebookApp.base\_url = 'notebook' \#외부 접근을 위한 필수 작업
+#c = get_config()
+c.NotebookApp.ip = '*'  #L158
+c.NotebookApp.open_browser = False # L201 원격접속으로 활용할 것이기 때문에 비활성화 시켰다.
+c.NotebookApp.port = 8585 # L213 포트를 설정해준다. 기본포트로 8888이 자동 배정된다.
+c.NotebookApp.password = u'sha1:a8dee43a3a44:b18f1ad149a60efb4838da44cf127985d64a5e70' # L210 python 실행후 from notebook.auth import passwd; passwd\(\)
+c.NotebookApp.notebook_dir = u'/home/adioshun/Jupyter' # L195 기본 디렉터리를 지정시켜준다.
+# c.NotebookApp.base_url = 'notebook' #L67 외부 접근을 위한 필수 작업
 ```
 
 > 공식 TensorFlow 설치 [[메뉴얼]](https://www.tensorflow.org/versions/master/get_started/os_setup), [[Ref]](http://b.winterj.me/220858584491)
