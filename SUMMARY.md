@@ -21,4 +21,5 @@
 * [20170227\_Google\_Writing](20170227_google_writing.md)
 * [20170304\_Markdown\_Lexex](20170304_markdown.md)
 * [20170302\_TensorBoard](20170302tensorboard.md)
+* [20170327\_jekyll설치](20170327jekyllc124-ce58.md)
 
