@@ -148,6 +148,15 @@ jupyter contrib nbextension install --user
 ```
 [참고](https://github.com/ipython-contrib/jupyter_contrib_nbextensions)
 
+
+#### 커널추가 
+```
+conda create -n py36 python=3.6
+source activate py36
+conda install notebook ipykernel
+ipython kernel install --user 
+``` 
+
 #### OpenAI Gym
 ```
 sudo apt-get install -y python-numpy python-dev cmake zlib1g-dev libjpeg-dev xvfb libav-tools xorg-dev python-opengl libboost-all-dev libsdl2-dev swig
