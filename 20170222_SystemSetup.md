@@ -95,7 +95,18 @@ $ source activate tensorflow
 # Linux/Mac OS X, Python 2.7/3.4/3.5, CPU only:
 ```
 
-####### pip을이용하여 설치할 경우 가상공간 진입후 하기 ([python3)
+###### 가상공간설정저장및불러오기
+```
+#저장하기
+source activate CarND-Vehicle-Detection
+conda env export > environment.yml
+
+#불러오기
+conda env create --file environment.yml --name CarND-Vehicle-Detection
+source activate CarND-Vehicle-Detection
+```
+
+###### pip을이용하여 설치할 경우 가상공간 진입후 하기 ([python3)
 ```
 $ source activate tensorflow
 $ (tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp34-cp34m-linux_x86_64.whl
