@@ -132,6 +132,9 @@ $ nohup jupyter notebook &
 ```
 
 ##### jupyter 테마
+https://github.com/powerpak/jupyter-dark-theme
+http://haanjack.github.io/jupyter/theme/2016/03/08/jupyter-theme.html
+https://github.com/dunovank/jupyter-themes
 
 ###### 설정 파일 \# /home/\(username\)/.jupyter/jupyter\_notebook\_config.py
 ```
