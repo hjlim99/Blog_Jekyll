@@ -131,6 +131,8 @@ $ vi /root/.jupyter/jupyter_notebook_config.py
 $ nohup jupyter notebook &
 ```
 
+##### jupyter 테마
+
 ###### 설정 파일 \# /home/\(username\)/.jupyter/jupyter\_notebook\_config.py
 ```
 #c = get_config()
