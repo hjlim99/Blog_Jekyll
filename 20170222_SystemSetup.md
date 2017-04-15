@@ -176,6 +176,8 @@ conda install notebook ipykernel
 ipython kernel install --user 
 ``` 
 
+http://stackoverflow.com/questions/39007571/running-jupyter-with-multiple-python-and-ipython-paths
+
 #### OpenAI Gym
 ```
 sudo apt-get install -y python-numpy python-dev cmake zlib1g-dev libjpeg-dev xvfb libav-tools xorg-dev python-opengl libboost-all-dev libsdl2-dev swig
