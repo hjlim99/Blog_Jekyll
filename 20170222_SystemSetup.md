@@ -1,4 +1,13 @@
-# 
+```
+conda install -c https://conda.binstar.org/menpo opencv3
+conda install -c conda-forge tensorflow
+conda install scipy
+conda install matplotlib
+conda install scikit-learn
+conda install scikit-image
+pip install moviepy
+``
+
 # Windows 기반 
 
 ### R
