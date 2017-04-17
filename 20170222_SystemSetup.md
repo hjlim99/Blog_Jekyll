@@ -185,6 +185,11 @@ conda install notebook ipykernel
 ipython kernel install --user 
 ``` 
 
+#### Spyder remote kernel connection 
+1. In jupyter run `%connect_info'
+2. save it as `kernel.json`
+3. Run spyder - 
+
 http://stackoverflow.com/questions/39007571/running-jupyter-with-multiple-python-and-ipython-paths
 
 #### OpenAI Gym
