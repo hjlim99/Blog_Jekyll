@@ -24,11 +24,11 @@ sudo curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.
 	- Ctrl+j를 누른 후에 - 를 누르면 상하로 분할됩니다.,
 
 ```
-apt-get install tmux
+apt-get install tmux 
 tmux new -s <원하는 이름>
 # 미리 창 분활 해놓기 : [Tmuxinator](https://github.com/tmuxinator/tmuxinator)
 ```
-
+> [자동설치 스크립트](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=tmux+install+script)
 
 
 출처: http://code4rain.tistory.com/1169527180 [codeRain's Life Blog]
