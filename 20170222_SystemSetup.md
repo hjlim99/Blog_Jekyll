@@ -1,3 +1,5 @@
+
+# Simple 버젼
 ```
 conda install -c https://conda.binstar.org/menpo opencv3
 conda install -c conda-forge tensorflow
@@ -7,6 +9,30 @@ conda install scikit-learn
 conda install scikit-image
 pip install moviepy
 ``
+
+---
+# 리눅스 설치후 
+- [zsh변경](https://nolboo.kim/blog/2015/08/21/oh-my-zsh/)
+```
+sudo apt-get install zsh
+chsh -s `which zsh` 
+sudo curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+# zsh가 느리게 시작 할때 `sudo rm -rf /private/var/log/asl*.as`
+```
+- [TMUX 설치](http://code4rain.tistory.com/1169527180)
+	- Ctrl+j를 누른 후에 | 를 누르면 좌우로 분할되고
+	- Ctrl+j를 누른 후에 - 를 누르면 상하로 분할됩니다.,
+
+```
+apt-get install tmux
+tmux new -s <원하는 이름>
+# 미리 창 분활 해놓기 : [Tmuxinator](https://github.com/tmuxinator/tmuxinator)
+```
+
+
+
+출처: http://code4rain.tistory.com/1169527180 [codeRain's Life Blog]
+---
 
 # Windows 기반 
 
